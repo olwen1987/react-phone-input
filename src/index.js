@@ -321,6 +321,18 @@ class ReactPhoneInput extends React.Component {
     }
   }
 
+  setInputFocus(){
+    this.refs.numberInput.focus();
+  }
+
+  getValue(){
+    this.refs.numberInput.value;
+  }
+
+  getSelectedCountry(){
+    this.state.selectedCountry;
+  }
+
   _getHighlightCountryIndex(direction) {
     // had to write own function because underscore does not have findIndex. lodash has it
     var highlightCountryIndex = this.state.highlightCountryIndex + direction;
